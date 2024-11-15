@@ -6,7 +6,6 @@
 define('BASE_URL_ADMIN', 'http://localhost/Project_ShoeNikes/');
 
 
-
 define('DB_HOST'    , 'localhost');
 define('DB_PORT'    , 3306);
 define('DB_USERNAME', 'root');
