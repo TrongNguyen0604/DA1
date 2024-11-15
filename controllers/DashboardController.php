@@ -3,6 +3,6 @@
 class DashboardController
 {
     public function dashboard() {
-        require_once './views/dashboard.php';
+        require_once './views/admin/dashboard.php';
     }
 }

@@ -3,8 +3,8 @@
 // Biến môi trường, dùng chung toàn hệ thống
 // Khai báo dưới dạng HẰNG SỐ để không phải dùng $GLOBALS
 
-define('BASE_URL'       , 'http://localhost/DUANMAU/');
-define('BASE_URL_ADMIN' , 'http://localhost/Project_ShoeNikes/');
+define('BASE_URL_ADMIN', 'http://localhost/Project_ShoeNikes/');
+
 
 
 define('DB_HOST'    , 'localhost');
