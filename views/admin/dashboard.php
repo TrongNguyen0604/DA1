@@ -10,13 +10,9 @@
 </head>
 
 <body>
-    <?php include('./views/components/navbar.php'); ?>
-
-    <div class="container">
-        <div class="row">
-            <h1>Trangg Quan admin</h1>
-        </div>
-    </div>
+    <?php include_once ROOT_DIR . "views/admin/header.php" ?>
+    <h1>ADMIN DASHBOARD</h1>
+    <?php include_once ROOT_DIR . "views/admin/footer.php" ?>
 </body>
 
 </html>
