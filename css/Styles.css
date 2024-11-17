@@ -396,7 +396,78 @@ nav {
     padding-left: 35px;
 
 }
+/* ------------------PRODUCT------------------------- */
+/* Tổng quan bố cục */
+.col-md-3 {
+    margin-bottom: 20px;
+}
 
+/* Hộp sản phẩm */
+.product-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hình ảnh sản phẩm */
+.product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Thông tin sản phẩm */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Tên sản phẩm */
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.product-name:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Giá sản phẩm */
+.product-price {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Nút thêm vào giỏ hàng */
+.product-buttons .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-buttons .btn:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* ---------------FOOTER--------------------- */
 .footer_suport {
     display: grid;
     grid-template-columns: 1fr 1fr;
