@@ -33,5 +33,6 @@ $ctl = $_GET['ctl'] ?? '';
 match ($ctl) {
     '', 'home' => (new HomeController)->index(),
     'category' => (new ClientCategoryController)->index(),
+    
     default => view("404.404"),
 };
