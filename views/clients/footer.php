@@ -90,7 +90,7 @@
                 </div>
                 <div class="footer_customers_logo">
                     <p>NET - A - PORTER  ACCEPTS</p>
-                  <img src="imagess/logoNN.png" alt="">
+                  <img src="images/logoNN.png" alt="">
                   <img src="images/logoNN1.png" alt="">
                   <img src="images/logoNN2.png" alt="">
                   <img src="images/logoNN3.png" alt="">

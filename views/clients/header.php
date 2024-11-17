@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Client<?= $title ?? '' ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= ROOT_URL ?>css/common.css">
-    <link rel="stylesheet" href="css/Styles.css">
-    <script src="https://kit.fontawesome.com/3efea8ee37.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -59,4 +56,18 @@
             </div>
         </div>
     </nav>
+    <header>
+        <div class="header_banner">
+            <img src="images/banner.png" alt="">
+        </div>
+        <div class="header_title">
+            <p>Nike Running</p>
+            <h1>WINNING ISN’T COMFORTABLE</h1>
+            <p>Tincidunt at mi sit risus fermentum risus ac neT est feugiat congue </p>
+        </div>
+        <div class="header_button">
+            <button>Shop Running</button>
+        </div>
+    </header>
+    
  
