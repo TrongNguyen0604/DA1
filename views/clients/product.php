@@ -35,6 +35,7 @@
 
 <div class="See_product">
 <?php foreach ($list_products as $pro) : ?>
+    
     <div class="product1">
         <div class="product_img">
           <img src="images/<?= $pro['image'] ?>" alt="Product Image" class="product-img">

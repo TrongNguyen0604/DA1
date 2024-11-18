@@ -12,4 +12,5 @@ class HomeController
         $list_products = $product->listOtherProduct();
         return view('clients.home', compact('pets', 'list_products'));
     }
+    
 }
