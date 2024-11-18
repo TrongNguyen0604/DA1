@@ -40,6 +40,16 @@ class Product extends BaseModel
         //trả về dữ liệu lấy được
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    //LIST SẢN PHẨM TRANG CHỦ
+    public function listHome1(){
+        $sql = "SELECT * FROM products LIMIT 3";
+        $stmt = $this->conn->prepare($sql);
+        //Thực thi
+        $stmt->execute();
+        //trả về dữ liệu lấy được
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
     //Lọc sản phẩm không phải thú cưng
     public function listOtherProduct()
     {
