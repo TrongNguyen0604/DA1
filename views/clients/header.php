@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Client<?= $title ?? '' ?></title>
-   
-    <link rel="stylesheet" href="css/Style.css">
+    <title>Home Client<?= $title ?? '' ?></title> 
+    <link rel="stylesheet" href="css/Styles.css">
 
 </head>
 
@@ -19,22 +18,35 @@
             </div>
             <div class="Head_support">
                 <ul>
-                    <li><a href="">Find a Store</a></li>|
-                    <li><a href="">Help</a></li>|
+                    <li><a href="">Trang chủ</a></li>|
+                    <li><a href="#">Sản phẩm</a></li>|
                     <li><a href="">Join Us</a></li>|
                     <li><a href="">Sign In</a></li>|
                 </ul>
             </div>
         </div>
+        <!-- Menu  -->
         <div class="Head1">
             <div class="Head1_LogoNike">
                 <img src="images/LogoNike.png" alt="">
             </div>
+
             <div class="Head1_Menu">
                 <ul>
-                    <li><a href="">New & Featured</a></li>
-                    <li><a href="">Men</a></li>
-                    <li><a href="">wonmen</a></li>
+                    <li><a href="<?= ROOT_URL ?>">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Sản phẩm</a>
+                        <ul class="dropdown-menu">
+                            <?php foreach ($categories as $cate): ?>
+                                <li>
+                                    <a href="<?= ROOT_URL . '?ctl=category&id=' . $cate['id'] ?>">
+                                        <?= $cate['cate_name'] ?>
+                                    </a>
+                                </li>
+                            <?php endforeach ?>
+                        </ul>
+                    </li>
+                    <li><a href="">Women</a></li>
                     <li><a href="">Kids</a></li>
                     <li><a href="">Sale</a></li>
                 </ul>
@@ -47,6 +59,8 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </div>
+
+        <!-- end menu -->
         <div class="Head2">
             <div class="SlideShow">
                 <p>Move, Shop, Customise & Celebrate With Us No matter what you feel

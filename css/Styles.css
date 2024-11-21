@@ -85,7 +85,7 @@ nav {
 }
 
 .Head1_Icon i {
-    color: #333;
+    color: white;
     font-size: 20px;
     cursor: pointer;
     transition: color 0.3s;
@@ -494,3 +494,91 @@ main {
 .footer {
     margin-bottom: 50px;
 }
+
+
+/* Hiệu ứng dropdown của menu  */
+/* Định dạng cơ bản cho Head1 */
+.Head1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #474747;
+    color: white;
+}
+
+/* Logo Nike */
+.Head1_LogoNike img {
+    max-height: 50px;
+}
+
+/* Menu chính */
+.Head1_Menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.Head1_Menu ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.Head1_Menu ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    background-color: #474747;
+    transition: background-color 0.3s ease;
+}
+
+.Head1_Menu ul li a:hover {
+    background-color: #555;
+}
+
+/* Dropdown menu */
+/* Dropdown menu - Bổ sung khoảng cách */
+.Head1_Menu ul li ul.dropdown-menu {
+    display: none; /* Ẩn mặc định */
+    position: absolute; /* Đặt vị trí tương đối với mục cha */
+    top: 100%; /* Hiển thị ngay bên dưới mục cha */
+    left: 0;
+    background-color: #444; /* Màu nền menu con */
+    padding: 0; /* Loại bỏ khoảng cách mặc định */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    list-style: none; /* Bỏ dấu chấm trong menu */
+    z-index: 100; /* Đảm bảo hiển thị phía trước */
+    min-width: 200px; /* Đặt chiều rộng tối thiểu */
+}
+
+/* Dropdown menu items */
+.Head1_Menu ul li ul.dropdown-menu li {
+    display: block; /* Hiển thị từng mục theo dạng khối */
+    width: 100%; /* Chiều rộng đầy đủ */
+}
+
+.Head1_Menu ul li ul.dropdown-menu li a {
+    padding: 10px 15px; /* Tạo khoảng cách bên trong */
+    background-color: #444; /* Màu nền từng mục */
+    color: #fff; /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    display: block; /* Đảm bảo click toàn mục */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.Head1_Menu ul li ul.dropdown-menu li a:hover {
+    background-color: #555; /* Thay đổi màu nền khi hover */
+}
+
+/* Hiển thị menu con khi di chuột */
+.Head1_Menu ul li:hover ul.dropdown-menu {
+    display: block;
+}
+
+/* Xử lý đè lên nhau */
+.Head1_Menu ul {
+    position: relative; /* Đặt vị trí gốc cho menu */
+}
+
+/*END Hiệu ứng dropdown của menu  */

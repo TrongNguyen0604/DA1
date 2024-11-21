@@ -9,8 +9,11 @@ class HomeController
         $pets = $product->listPets();
 
         //Lấy sản phẩm khác
-        $list_products = $product->listHome1();
-        return view('clients.home', compact('pets', 'list_products'));
+        $list_products = $product->listOtherProduct();
+        
+        //lấy ra danh mục
+        $categories = (new Category)->list() ; 
+        return view('clients.home', compact('pets', 'list_products','categories'));
     }
     
 }

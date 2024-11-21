@@ -30,7 +30,7 @@ class Product extends BaseModel
         //trả về dữ liệu lấy được
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-    //Lọc sản phẩm theo thú cưng hoặc sản phẩm
+    //Lọc sản phẩm sản phẩm
     public function listPets()
     {
         $sql = "SELECT p.*, c.cate_name, type FROM products p JOIN categories c ON p.category_id=c.id WHERE type=1 LIMIT 4";
@@ -50,7 +50,7 @@ class Product extends BaseModel
         //trả về dữ liệu lấy được
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-    //Lọc sản phẩm không phải thú cưng
+    //Lọc sản phẩm giày
     public function listOtherProduct()
     {
         $sql = "SELECT p.*, c.cate_name, type FROM products p JOIN categories c ON p.category_id=c.id WHERE type=0";
