@@ -7,6 +7,7 @@
     <title>Home Client<?= $title ?? '' ?></title> 
     <link rel="stylesheet" href="css/Styles.css">
     <link rel="stylesheet" href="css/Styles_product.css">
+    <script src="https://kit.fontawesome.com/3efea8ee37.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -29,7 +30,8 @@
         <!-- Menu  -->
         <div class="Head1">
             <div class="Head1_LogoNike">
-                <img src="images/LogoNike.png" alt="">
+                <a href="?ctl=home"><img src="images/LogoNike.png" alt=""></a>
+                
             </div>
 
             <div class="Head1_Menu">
@@ -73,7 +75,7 @@
             </div>
         </div>
     </nav>
-    <header>
+    <!-- <header>
         <div class="header_banner">
             <img src="images/banner.png" alt="">
         </div>
@@ -85,6 +87,6 @@
         <div class="header_button">
             <button>Shop Running</button>
         </div>
-    </header>
+    </header> -->
     
  
