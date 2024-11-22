@@ -1,0 +1,461 @@
+.Nike_Air {
+    margin-top: 50px;
+}
+
+.Nike_Air_product {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.Nike_Air_product_1 {
+    margin-top: 40px;
+}
+
+.Main_title p {
+    margin-left: 100px;
+}
+
+.Main_title_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main_title_1_p {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.product1 {
+    margin-left: 104px;
+}
+
+.product2 {
+    margin-right: 115px;
+}
+
+.product img {
+    text-align: center;
+}
+
+.Nike_Air_product_product1_img img {
+    width: 420px;
+    height: 437px;
+}
+
+.Nike_Air_product_Content .name {
+    font-size: 24px;
+}
+
+.Nike_Air_product_Content p {
+    font-size: 14px;
+    color: rgba(96, 94, 94, 1);
+}
+
+.Nike_Air_product_Content .price {
+    font-size: 20px;
+}
+
+.price {
+    margin-top: 25px;
+}
+
+.Nike_Air_product_product1_img {
+    position: relative;
+    display: inline-block;
+}
+
+.product_img {
+    position: relative;
+    display: inline-block;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.iconx {
+    color: rgb(214, 214, 214);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.main_general {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.main_img img {
+    width: 230px;
+    height: 230px;
+}
+
+.main_information {
+    margin-left: 40px;
+    margin-top: 0;
+    width: 530px;
+}
+
+.main_information h2 {
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+
+.main_information h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.main_information p {
+    font-size: 12px;
+    color: rgba(99, 95, 95, 1);
+    line-height: 30px;
+
+
+}
+
+.main_information del {
+    font-size: 12px;
+    color: rgba(99, 95, 95, 1);
+    line-height: 20px;
+    margin-right: 8px;
+
+}
+
+.main_information_price {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.main_information_price h4 {
+    margin-right: 900px;
+    margin-top: 10px;
+}
+
+.main_information_price del {
+    margin-top: 10px;
+}
+
+.main_information_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.main_information_button button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main_information_button button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.main_information_button_1 button {
+    width: 60px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.main_all {
+    margin-top: 50px;
+
+}
+
+.main_vocher {
+    width: 400px;
+    /* Chiều rộng của khung */
+    margin: 20px auto;
+    /* Căn giữa và cách phía trên */
+    padding: 20px;
+    /* Khoảng cách bên trong khung */
+    border: 2px solid rgb(214, 214, 214);
+    /* Đường viền màu xanh */
+    border-radius: 5px;
+    /* Bo góc */
+    background-color: #ffffff;
+    /* Màu nền nhẹ */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+    font-family: Arial, sans-serif;
+    /* Phông chữ mặc định */
+    margin-right: 100px;
+
+}
+
+.main_vocher h2 {
+    margin-bottom: 10px;
+    color: #333;
+    /* Màu chữ */
+    font-size: 20px;
+    /* Kích thước chữ */
+    font-weight: bold;
+    /* Đậm chữ */
+
+}
+
+.main_vocher h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+    /* Màu xanh */
+    font-size: 16px;
+}
+
+.main_vocher p {
+    margin-bottom: 10px;
+    color: #555;
+    /* Màu chữ */
+    font-size: 14px;
+}
+
+.main_vocher input[type="text"] {
+    width: calc(100% - 20px);
+    /* Đủ rộng trừ padding */
+    padding: 10px;
+    /* Khoảng cách nội dung */
+    border: 1px solid #ccc;
+    /* Đường viền nhạt */
+    border-radius: 5px;
+    /* Bo góc */
+    margin-bottom: 15px;
+    /* Khoảng cách dưới */
+    font-size: 14px;
+}
+
+.main_vocher input[type="radio"] {
+    margin-right: 10px;
+    /* Khoảng cách sau radio */
+    cursor: pointer;
+    /* Con trỏ thay đổi khi hover */
+}
+
+.main_vocher p input {
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+/* -----------------BUTTON_PAY----------------------------- */
+.main_pay {
+    display: flex;
+    /* Sử dụng Flexbox */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: space-between;
+    /* Cách đều các phần tử */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    margin-top: 30px;
+    background-color: #dcdcdc;
+    /* Màu nền */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+}
+
+.main_pay_total_price {
+    flex: 1;
+    /* Chiếm khoảng trống phù hợp */
+    margin-left: 100px;
+
+}
+
+.main_pay_total_price p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.main_pay_total_price h2 {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.main_pay_button {
+    flex: 1;
+    /* Chiếm khoảng trống phù hợp */
+    display: flex;
+    justify-content: flex-end;
+    /* Đưa nút sang bên phải */
+    gap: 10px;
+    /* Khoảng cách giữa các nút */
+    margin-right: 100px;
+
+}
+
+.main_pay_button button {
+    padding: 15px 25px;
+    /* Khoảng cách trong nút */
+    font-size: 14px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main_pay_button button:hover {
+    background-color: #0056b3;
+    /* Màu đậm hơn khi hover */
+}
+
+
+
+.main_Delivery_information {
+    width: 70%;
+    /* Độ rộng của khối */
+    margin: 20px auto;
+    /* Căn giữa */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    border: 1px solid #ccc;
+    /* Đường viền */
+    border-radius: 8px;
+    /* Bo góc */
+    background-color: #f9f9f9;
+    /* Màu nền */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+    font-family: Arial, sans-serif;
+    /* Font chữ */
+    margin-right: 100px;
+}
+
+.main_Delivery_information h2 {
+    font-size: 24px;
+    /* Cỡ chữ tiêu đề lớn */
+    margin-bottom: 20px;
+    /* Khoảng cách dưới */
+    color: #333;
+    /* Màu chữ */
+}
+
+.main_Delivery_information h3 {
+    font-size: 18px;
+    /* Cỡ chữ tiêu đề nhỏ */
+    margin-bottom: 10px;
+    /* Khoảng cách dưới */
+    color: #555;
+    /* Màu chữ */
+}
+
+.main_Delivery_information input[type="text"] {
+    width: calc(100% - 20px);
+    /* Độ rộng input */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    margin-bottom: 15px;
+    /* Khoảng cách giữa các input */
+    border: 1px solid #ccc;
+    /* Đường viền */
+    border-radius: 4px;
+    /* Bo góc input */
+    box-sizing: border-box;
+    /* Bao gồm padding và viền */
+    font-size: 16px;
+    /* Cỡ chữ */
+}
+
+.main_Delivery_information input[type="text"]:focus {
+    border-color: #007BFF;
+    /* Màu viền khi focus */
+    outline: none;
+    /* Bỏ đường viền outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Đổ bóng khi focus */
+}
+
+.note {
+    height: 150px;
+}
+
+.main_pay_total_price p {
+    line-height: 30px;
+}
+
+.main_order_ {
+    width: 100%;
+    /* Độ rộng của khối */
+    text-align: center;
+
+}
+
+.main_order_ p {
+    font-size: 16px;
+    /* Cỡ chữ đoạn văn */
+    line-height: 1.6;
+    /* Khoảng cách dòng */
+    color: #555;
+    /* Màu chữ nhạt hơn */
+    margin-bottom: 20px;
+    /* Khoảng cách dưới */
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+
+}
+
+.main_order_ button {
+    background-color: #000000;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ */
+    font-size: 18px;
+    /* Cỡ chữ */
+    padding: 15px 150px;
+    /* Khoảng cách bên trong nút */
+    border: none;
+    /* Bỏ đường viền */
+    border-radius: 5px;
+    /* Bo góc nút */
+    cursor: pointer;
+    /* Đổi con trỏ khi hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Hiệu ứng chuyển đổi */
+}
+
+.main_order_ button:hover {
+    background-color: #0056b3;
+    /* Màu nền khi hover */
+    transform: scale(1.05);
+    /* Phóng to nhẹ */
+}
+
+.main_order_ button:active {
+    background-color: #003d80;
+    /* Màu nền khi bấm */
+    transform: scale(0.95);
+    /* Thu nhỏ nhẹ */
+}

@@ -8,11 +8,14 @@ require_once __DIR__ . "/models/Product.php";
 require_once __DIR__ . "/controllers/HomeController.php";
 require_once __DIR__ . "/controllers/ClientCategoryController.php";
 require_once __DIR__ . "/controllers/ProductController.php";
+require_once __DIR__ . "/controllers/LoginController.php";
+
 $ctl = $_GET['ctl'] ?? '';
 
 match ($ctl) {
     '', 'home' => (new HomeController)->index(),
     'category' => (new ProductController)->list(),
     'detail' => (new ProductController)->show() , 
+    'login' => (new LoginController)->index(),
     default => view("404.404"),
 };

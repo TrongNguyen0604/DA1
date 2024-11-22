@@ -7,6 +7,8 @@
     <title>Home Client<?= $title ?? '' ?></title> 
     <link rel="stylesheet" href="css/Styles.css">
     <link rel="stylesheet" href="css/Styles_product.css">
+    <link rel="stylesheet" href="css/styles_form.css">
+    <link rel="stylesheet" href="css/Styles_product_detail.css">
     <script src="https://kit.fontawesome.com/3efea8ee37.js" crossorigin="anonymous"></script>
 
 </head>
@@ -23,7 +25,7 @@
                     <li><a href="">Trang chủ</a></li>|
                     <li><a href="#">Sản phẩm</a></li>|
                     <li><a href="">Join Us</a></li>|
-                    <li><a href="">Sign In</a></li>|
+                    <li><a href="index.php?ctl=login">Sign In</a></li>|
                 </ul>
             </div>
         </div>
