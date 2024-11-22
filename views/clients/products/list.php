@@ -10,7 +10,7 @@
         <?php foreach ($products as $pro) : ?>
 
             <div class="product">
-                <a href="<?= ROOT_URL . '?ctl=detail&id=' . $pro['id'] ?>">
+                <a style="text-decoration: none;color: inherit;display: block;" href="<?= ROOT_URL . '?ctl=detail&id=' . $pro['id'] ?>">
                     <div class="product_img">
                         <img src="images/<?= $pro['image'] ?>" alt="Product Image" class="product-img">
                     </div>
@@ -38,9 +38,9 @@
                 <h2>Member_Benefits</h2>
             </div>
             <div class="Member_Benefits_img">
-                <img src="Image/Member1.png" alt="">
-                <img src="Image/Member2.png" alt="">
-                <img src="Image/Member3.png" alt="">
+                <img src="images/Member1.png" alt="">
+                <img src="images/Member2.png" alt="">
+                <img src="images/Member3.png" alt="">
             </div>
         </div> 
 </main>

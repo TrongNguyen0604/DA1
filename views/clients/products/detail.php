@@ -54,7 +54,7 @@
                 <p>Upload your photo or mention @Nike on Instagram for a chance to be featured.</p>
             </div>
             <div class="main_product_how_more">
-                <img src="Image/How.png" alt="">
+                <img src="images/How.png" alt="">
                 <button><i class="fa-solid fa-circle-plus h"></i></button>
             </div>
         </div>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="Customer_feedback_content2">
                         <div class="Customer_feedback_content2_img">
-                            <img src="Image/customer.png" alt="">
+                            <img src="images/customer.png" alt="">
                         </div>
                         <div class="Customer_feedback_content2_information">
                             <i class="fa-solid fa-star"></i>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="Customer_feedback_content2">
                         <div class="Customer_feedback_content2_img">
-                            <img src="Image/customer1.png" alt="">
+                            <img src="images/customer1.png" alt="">
                         </div>
                         <div class="Customer_feedback_content2_information">
                             <i class="fa-solid fa-star"></i>
@@ -127,3 +127,4 @@
 
 
 <?php include_once ROOT_DIR . "views/clients/footer.php" ?>
+

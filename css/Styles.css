@@ -582,3 +582,54 @@ main {
 }
 
 /*END Hiệu ứng dropdown của menu  */
+
+
+/* Thêm border và định dạng cho sản phẩm */
+.See_product .product {
+    border: 1px solid #ddd; /* Border mỏng màu xám nhạt */
+    border-radius: 8px; /* Bo góc nhẹ */
+    overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt khi hover */
+    background-color: #fff; /* Nền trắng cho sản phẩm */
+    /* padding: 10px; Khoảng cách bên trong */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho sản phẩm */
+}
+
+/* Hiệu ứng khi hover sản phẩm */
+.See_product .product:hover {
+    transform: translateY(-5px); /* Di chuyển nhẹ lên trên khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đậm hơn khi hover */
+    border-color: #ff5733; /* Đổi màu border khi hover */
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.product_img img {
+    width: 100%; /* Đảm bảo hình ảnh full chiều rộng */
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Đường chia giữa ảnh và nội dung */
+    transition: transform 0.3s ease; /* Hiệu ứng ảnh khi hover */
+}
+
+/* Zoom hình ảnh khi hover */
+.See_product .product:hover .product_img img {
+    transform: scale(1.05); /* Phóng to ảnh nhẹ */
+}
+
+/* Định dạng nội dung sản phẩm */
+.product_Content {
+    /* text-align: center; Căn giữa nội dung */
+    padding: 10px 0; /* Khoảng cách giữa các phần */
+    padding: 10px 10px 10px 15px; /* Khoảng cách bên trong: trên, phải, dưới, trái */
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Khoảng cách dưới */
+}
+
+.product-price {
+    font-size: 16px;
+    color: #ff5733; /* Màu nổi bật cho giá */
+    font-weight: bold;
+}
