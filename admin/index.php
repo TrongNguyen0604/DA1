@@ -10,6 +10,9 @@ require_once __DIR__ . "/../models/Product.php";
 
 //include controller
 require_once __DIR__ . "/../controllers/admin/AdminProductController.php";
+require_once __DIR__ . "/../controllers/admin/AdminCategoryController.php";
+require_once __DIR__ . "/../controllers/admin/DashboardController.php";
+
 
 $ctl = $_GET['ctl'] ?? "";
     
@@ -20,6 +23,11 @@ match ($ctl) {
     'storesp' => (new AdminProductController)->store(),
     'editsp' => (new AdminProductController)->edit(),
     'updatesp' => (new AdminProductController)->update(),
-    'deletesp' => (new AdminProductController)->delete(),
+    'listdm' => (new AdminCategoryController)->index(),
+    'adddm' => (new AdminCategoryController)->create(),
+    'storedm' => (new AdminCategoryController)->store(),
+    'editdm' => (new AdminCategoryController)->edit(),
+    'updatedm' => (new AdminCategoryController)->update(),
+    'deletedm' => (new AdminCategoryController)->delete(),
     default => view('404.404'),
 };

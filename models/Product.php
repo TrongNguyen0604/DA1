@@ -33,7 +33,7 @@ class Product extends BaseModel
     //Lọc sản phẩm sản phẩm
     public function listPets()
     {
-        $sql = "SELECT p.*, c.cate_name, type FROM products p JOIN categories c ON p.category_id=c.id WHERE type=1 LIMIT 4";
+        $sql = "SELECT p.*, c.cate_name FROM products p JOIN categories c ON p.category_id=c.id";
         $stmt = $this->conn->prepare($sql);
         //Thực thi
         $stmt->execute();
@@ -53,7 +53,7 @@ class Product extends BaseModel
     //Lọc sản phẩm giày
     public function listOtherProduct()
     {
-        $sql = "SELECT p.*, c.cate_name, type FROM products p JOIN categories c ON p.category_id=c.id WHERE type=0";
+        $sql = "SELECT p.*, c.cate_name FROM products p JOIN categories c ON p.category_id=c.id";
         $stmt = $this->conn->prepare($sql);
         //Thực thi
         $stmt->execute();
