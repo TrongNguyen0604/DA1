@@ -61,7 +61,10 @@
                     <input type="text">
                 </div>
                 <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <!-- icon giỏ hàng  -->
+                <a href="<?= ROOT_URL . '?ctl=view-cart'?>">
+                    <i class="fa-solid fa-cart-shopping">(<?= $_SESSION['totalQuantity'] ?? '0' ?>)</i>
+                </a>
             </div>
         </div>
 

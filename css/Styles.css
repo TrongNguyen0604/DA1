@@ -132,7 +132,7 @@ nav {
 
 .header_banner img {
     text-align: center;
-    width: 1300px;
+    width: 1519px;
     height: 504px;
 
 }
@@ -185,7 +185,7 @@ nav {
 /* -------------MAIN-------------- */
 
 .Main_title h2 {
-    margin-left: 102px;
+    margin-left: 12px;
     display: block;
 }
 
@@ -219,6 +219,7 @@ main {
 
 .product {
     width: 32%;
+    margin-bottom: 30px;
 }
 
 

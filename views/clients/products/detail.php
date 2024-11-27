@@ -23,7 +23,7 @@
                     <p>Color: Black</p>
                     <p>Size: One Size</p> -->
                     <p><?= $product['quantity'] ? 'Còn hàng' : 'Hết hàng' ?></p>
-                    <p><?= number_format($product['price']) ?> VND</p>
+                    <p class="product-price"><?= number_format($product['price']) ?>₫</p>
                     <p><strong>Số lượng còn:</strong><?= $product['quantity'] ?></p>
                     <p>Size: One Size</p>
                 </div>
@@ -37,10 +37,12 @@
                     <button>FR40</button>
                 </div>
                 <div class="main_product_information_button">
-                    <button>Add to Bag</button>
+                    <button>Mua hàng</button>
                 </div>
                 <div class="main_product_information_button">
-                    <button><i class="fa-regular fa-heart"></i>Add to With List</button>
+                    <a href="<?= ROOT_URL . '?ctl=add-cart&id=' . $product['id'] ?>">
+                        <button><i class="fa-regular fa-heart"></i>Thêm vào giỏ hàng</button>
+                    </a>
                 </div>
                 <div class="main_product_information_Notes">
                     <h5>Mô tả</h5>

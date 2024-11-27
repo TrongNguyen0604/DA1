@@ -45,7 +45,7 @@
         <!--Lưu id vào hidden-->
         <input type="hidden" name="id" value="<?= $product['id'] ?>">
         <div class="mb-3">
-            <button type="submit" class="btn btn-primary">Cập nhật</button>
+            <button type="submit" class="btn btn-primary">Update</button>
         </div>
     </form>
 </div>

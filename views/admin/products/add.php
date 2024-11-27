@@ -40,7 +40,7 @@
             <textarea name="description" class="form-control" rows="6"></textarea>
         </div>
         <div class="mb-3">
-            <button type="submit" class="btn btn-primary">Thêm mới</button>
+            <button type="submit" class="btn btn-primary">Create</button>
         </div>
     </form>
 </div>
