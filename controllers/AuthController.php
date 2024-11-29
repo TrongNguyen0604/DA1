@@ -15,6 +15,9 @@ class AuthController {
             // Insert vào database
             (new User)->create($data);
 
+            //Lưu lại email khi sau khi đăng kí
+            $_SESSION['email'] = $data['email'];
+
             // Thông báo 
             $_SESSION['message'] = 'Đăng ký thành công';
             header("Location:" .ROOT_URL . "?ctl=login");
