@@ -84,7 +84,7 @@
                 <div class="Head1_Search">
                     <input type="text">
                 </div>
-                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-search"></i>
                 <!-- icon giỏ hàng  -->
                 <a href="<?= ROOT_URL . '?ctl=view-cart' ?>">
                     <i class="fa-solid fa-cart-shopping">(<?= $_SESSION['totalQuantity'] ?? '0' ?>)</i>
@@ -97,11 +97,11 @@
             <div class="SlideShow">
                 <p>Move, Shop, Customise & Celebrate With Us No matter what you feel
                     <br> like doing today, It’s better as a
-                    Member. Join Us
+                    Member.
             </div>
-            <div class="Join">
+            <!-- <div class="Join">
                 <a href="">Join Us</a>
-            </div>
+            </div> -->
         </div>
     </nav>
     <!-- <header>

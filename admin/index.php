@@ -26,6 +26,7 @@ match ($ctl) {
     'storesp' => (new AdminProductController)->store(),
     'editsp' => (new AdminProductController)->edit(),
     'updatesp' => (new AdminProductController)->update(),
+    'deletesp' => (new AdminProductController)->delete(),
 
     // Danh mục
     'listdm' => (new AdminCategoryController)->index(),

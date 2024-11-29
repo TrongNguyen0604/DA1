@@ -86,6 +86,9 @@ class CartController {
         foreach($quantities as $id => $qty) {
             $_SESSION['cart'][$id]['quantity'] = $qty ;
         }
+
+        //Lấy tổng số lượng giỏ hàng lưu vào session
+        $_SESSION['totalQuantity'] = $this->totalSumQuantity($_SESSION['cart']) ; 
         return header("Location:" . ROOT_URL . '?ctl=view-cart') ;
     }
 }

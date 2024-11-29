@@ -27,12 +27,9 @@ match ($ctl) {
     'add-cart' => (new CartController)->addToCard() , 
     'view-cart' => (new CartController)->viewCart(),
     'delete-cart' => (new CartController)->deleteProductInCart(),
-<<<<<<< HEAD
     'update-cart' => (new CartController)->updateCart(),
-=======
     'register' => (new AuthController)->register(),
     'login' => (new AuthController)->login(),
     'logout' => (new AuthController)->logout(),
->>>>>>> d2aeb6a3eacc807ac3fa30533c21e5fc05568844
     default => view("404.404"),
 };

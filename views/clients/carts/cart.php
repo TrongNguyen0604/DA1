@@ -35,11 +35,9 @@
                             <h4><?= $cart['price'] ?>₫</h4>
                         </div>
                         <div class="main_information_button">
-                            <button class="main_information_button_side"><i class="fa-solid fa-minus"></i></button>
                             <div class="main_information_button_1">
                                 <input type="number" min='1' class="main_information_button_center" name="quantity[<?= $id?>]" value="<?= $cart['quantity'] ?>">
                             </div>
-                            <button class="main_information_button_side"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <h3>Tổng:<?= $cart['price'] * $cart['quantity'] ?>₫</h3>
                     </div>
@@ -90,18 +88,19 @@
 
 
         </div>
-    </form>
         <div class="main_pay">
             <div class="main_pay_total_price">
                 <p>Tổng tiền giỏ hàng:  </p>
                 <h2><?= number_format($totalPriceOder) ?>₫</h2>
             </div>
             <div class="main_pay_button">
-                <button>Tiếp tục mua hàng</button>
+                <button><a style="text-decoration:none;color:white" href="<?= ROOT_URL ?>">Tiếp tục mua hàng</a></button>
                 <button type="submit">Cập nhật giỏ hàng</button>
                 <button>Thanh toán</button>
             </div>
         </div>
+    </form>
+        
 
 
         <!-- 

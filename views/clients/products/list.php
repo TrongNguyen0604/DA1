@@ -32,7 +32,7 @@ foreach ($categories as $cate) {
                                     <img src="images/<?= $pro['image'] ?>" alt="Product Image" class="product-img">
                                 </div>
                                 <div class="product_Content">
-                                    <div class="name">
+                                    <div class="name" style="margin-top:8px">
                                         <h5 class="product-name"><?= $pro['name'] ?></h5>
                                     </div>
                                     <p>Số lượng còn: <?= $pro['quantity'] ?></p>
