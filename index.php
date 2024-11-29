@@ -23,5 +23,6 @@ match ($ctl) {
     'add-cart' => (new CartController)->addToCard() , 
     'view-cart' => (new CartController)->viewCart(),
     'delete-cart' => (new CartController)->deleteProductInCart(),
+    'update-cart' => (new CartController)->updateCart(),
     default => view("404.404"),
 };

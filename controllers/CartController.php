@@ -61,10 +61,10 @@ class CartController {
     //Hiện ra giỏ hàng
     public function viewCart() {
         $carts = $_SESSION['cart'] ?? [] ; 
-
+        $categories = (new Category)->list() ;
         $totalPriceOder = $this->totalPriceOder() ; 
 
-        return view('clients.carts.cart', compact('carts', 'totalPriceOder')) ; 
+        return view('clients.carts.cart', compact('carts', 'totalPriceOder', 'categories')) ; 
     }
 
     //xóa sản phẩm trong giỏ hàng 
@@ -77,5 +77,15 @@ class CartController {
 
         //Quay lại giỏ hàng
         return header("Location:" . ROOT_URL . '?ctl=view-cart') ; 
+    }
+
+    //Cập nhật giỏ hàng
+    public function updateCart() {
+        $quantities = $_POST['quantity'] ; 
+        //cập nhật số lượng
+        foreach($quantities as $id => $qty) {
+            $_SESSION['cart'][$id]['quantity'] = $qty ;
+        }
+        return header("Location:" . ROOT_URL . '?ctl=view-cart') ;
     }
 }

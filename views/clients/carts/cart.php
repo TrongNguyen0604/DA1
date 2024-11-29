@@ -1,6 +1,7 @@
 <?php include_once ROOT_DIR . "views/clients/header.php" ?>
 
 <main>
+    <form action="<?= ROOT_URL . '?ctl=update-cart'?>" method="POST">
         <div class="main_all">
 
             <div class="Main_title">
@@ -40,6 +41,7 @@
                             </div>
                             <button class="main_information_button_side"><i class="fa-solid fa-plus"></i></button>
                         </div>
+                        <h3>Tổng:<?= $cart['price'] * $cart['quantity'] ?>₫</h3>
                     </div>
                     <a href="<?= ROOT_URL . '?ctl=delete-cart&id=' . $id?>">
                         <i class="fa-solid fa-xmark "></i>
@@ -88,13 +90,15 @@
 
 
         </div>
+    </form>
         <div class="main_pay">
             <div class="main_pay_total_price">
-                <p>Tổng giá (sản phẩm)  </p>
+                <p>Tổng tiền giỏ hàng:  </p>
                 <h2><?= number_format($totalPriceOder) ?>₫</h2>
             </div>
             <div class="main_pay_button">
                 <button>Tiếp tục mua hàng</button>
+                <button type="submit">Cập nhật giỏ hàng</button>
                 <button>Thanh toán</button>
             </div>
         </div>

@@ -28,7 +28,7 @@ class ProductController {
 
         //Lưu lại đường dẫn vào session
         $_SESSION['URI'] = $_SERVER['REQUEST_URI'] ; 
-
+        // $_SESSION['totalQuantity'] = (new CartController) -> totalSumQuantity($carts);
 
 
         return view(
