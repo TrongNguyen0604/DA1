@@ -97,11 +97,11 @@
             <div class="SlideShow">
                 <p>Move, Shop, Customise & Celebrate With Us No matter what you feel
                     <br> like doing today, It’s better as a
-                    Member.
+                    Member. Join Us
             </div>
-            <!-- <div class="Join">
+            <div class="Join">
                 <a href="">Join Us</a>
-            </div> -->
+            </div>
         </div>
     </nav>
     <!-- <header>
