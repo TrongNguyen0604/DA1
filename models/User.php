@@ -1,31 +1,60 @@
 <?php
-class User extends BaseModel{
-    // public function check($username, $password)
-    // {
-    //     $sql = "SELECT * FROM admin WHERE username=:$username AND password=:$password";
-    //     $stmt = $this->conn->prepare($sql);
-    //     echo($sql);
-    //     $stmt->execute();
-    //     $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    //     return $result;
-    // }
 
-    public function check($username, $password) {
-        // Sử dụng tham số đúng cách trong câu lệnh SQL
-        $sql = "SELECT * FROM admin WHERE username = :username AND password = :password";
+class User extends BaseModel {
+    // lấy toàn bộ users
+    public function all()
+    {
+        $sql = "SELECT * FROM users";
         $stmt = $this->conn->prepare($sql);
-
-        // Gán giá trị cho tham số
-        $stmt->bindParam(':username', $username, PDO::PARAM_STR);
-        $stmt->bindParam(':password', $password, PDO::PARAM_STR);
-
-        // Thực thi câu lệnh SQL
         $stmt->execute();
-
-        // Lấy kết quả
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        // Trả về kết quả nếu tìm thấy, hoặc false nếu không có bản ghi nào
-        return $result ? $result : false;
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    // Lấy ra một user
+    public function find($id)
+    {
+        $sql = "SELECT * FROM users WHERE id=:id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    // Lấy ra 1 user theo email
+    public function findUserOfEmail($email)
+    {
+        $sql = "SELECT * FROM users WHERE email=:email";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['email' => $email]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    // Thêm 1 user
+    public function create($data)
+    {
+        $sql = "INSERT INTO users(fullname, email, password, phone, address) VALUES
+        (:fullname, :email, :password, :phone, :address)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute($data);
+
+    }
+
+    // Cập nhật user
+    public function update($id, $data)
+    {
+        $sql = "UPDATE users SET fullname=:fullname, phone=:phone, address=:address,
+        role=:role, active=:active WHERE id=:id";
+        $stmt = $this->conn->prepare($sql);
+        // Thêm id vào data
+        $data['id'] = $id;
+        $stmt->execute($data);
+    }
+
+    // Cập nhật hoạt động của user
+    public function updateActive($id, $active)
+    {
+        $sql = "UPDATE users SET active=:active WHERE id=:id";
+        $stmt = $this->conn->prepare($sql);
+       $stmt->execute(['id' => $id, 'active' => $active]);
+    }
+
 }
