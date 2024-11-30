@@ -80,16 +80,22 @@
 
                 </ul>
             </div>
+            <form class="d-flex" role="search">
             <div class="Head1_Icon">
                 <div class="Head1_Search">
-                    <input type="text">
+                    <input type="search" class="form-control me-2" placeholder="Search" 
+                    aria-label="Search" id="keyword">
                 </div>
-                <i class="fa-solid fa-search"></i>
+                <button class="btn btn-outline-succcess" type= "button" id="btnSearch">
+                    <i class="fa-solid fa-search"  id="btnSearch"></i> 
+                </button>
+            </form>
                 <!-- icon giỏ hàng  -->
                 <a href="<?= ROOT_URL . '?ctl=view-cart' ?>">
                     <i class="fa-solid fa-cart-shopping">(<?= $_SESSION['totalQuantity'] ?? '0' ?>)</i>
                 </a>
             </div>
+            
         </div>
 
         <!-- end menu -->

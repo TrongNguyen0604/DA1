@@ -3,9 +3,11 @@ include_once ROOT_DIR . "views/clients/header.php";
 ?>
 
 <main>
+
+
+    <h2>Từ khóa tìm kiếm<?=$keyword?></h2>
     <div class="See_What_New">
         <div class="See_product">
-            <?php if($products)?>
             <!-- Hiển thị tất cả sản phẩm -->
             <?php foreach ($products as $pro): ?>
                 <div class="product">

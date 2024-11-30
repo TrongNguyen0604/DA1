@@ -92,5 +92,13 @@
 
         </div>
     </footer>
+    <script>
+        btnSearch = document.getElementById('btnSearch');
+        keyword   = document.getElementById('keyword');
+
+        btnSearch.addEventListener('click',function() {
+            location.href = "<?= ROOT_URL . '?ctl=search&keyword'?>" + keyword.value;
+        });
+    </script>
 </body>
 </html>

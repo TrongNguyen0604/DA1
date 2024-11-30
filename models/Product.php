@@ -19,6 +19,24 @@ class Product extends BaseModel
         //trả về dữ liệu lấy được
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    // Tìm kiếm sản phẩm
+    public function searchProductName($name)
+    {
+        // Câu lệnh sql
+        $sql = "SELECT p.*, c.cate_name FROM products p JOIN categories c ON p.category_id=c.id 
+        WHERE name LIKE '%name%'";
+        //Chuẩn bị thực thi
+        $stmt = $this->conn->prepare($sql);
+        //Thực thi
+        $stmt->execute();
+        //trả về dữ liệu lấy được
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+
+
     //Lấy sản phẩm theo loại           //c.id
     public function listProductInCategory($id)
     {
