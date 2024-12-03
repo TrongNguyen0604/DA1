@@ -19,4 +19,17 @@ class OrderController{
         $status = (new Order)->status_details;
         return view('admin.orders.detail', compact('order', 'order_details','status'));
     }
+
+    // Hiển thị danh sách hóa đơn của user theo id
+    public function showOrderUser()
+    {
+        $user_id = $_SESSION['user']['id'];
+
+        $orders = (new Order)->findOrderUser($user_id);
+
+        $categories = (new Category)->list();
+
+        return view('clients.users.list-order', compact('orders', 'categories'));
+
+    }
 }
