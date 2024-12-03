@@ -105,9 +105,9 @@
                     <br> like doing today, It’s better as a
                     Member. Join Us
             </div>
-            <div class="Join">
+            <!-- <div class="Join">
                 <a href="">Join Us</a>
-            </div>
+            </div> -->
         </div>
     </nav>
     <!-- <header>

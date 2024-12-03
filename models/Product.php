@@ -25,7 +25,7 @@ class Product extends BaseModel
     {
         // Câu lệnh sql
         $sql = "SELECT p.*, c.cate_name FROM products p JOIN categories c ON p.category_id=c.id 
-        WHERE name LIKE '%name%'";
+        WHERE name LIKE '%$name%'";
         //Chuẩn bị thực thi
         $stmt = $this->conn->prepare($sql);
         //Thực thi

@@ -5,6 +5,6 @@ class SearchController{
         $products = (new Product)->searchProductName($keyword);
 
         $categories = (new Category)->list();
-        return view('clients.products.search', compact('products'),'categories','name');
+        return view('clients.products.search', compact('products','categories','keyword'));
     }
 }
