@@ -27,8 +27,8 @@ function session_flash($key)
 // Chuyển đổi trạng thái đơn hàng
 function getOrderStatus($status){
     $status_details = [
-        1 => 'Chờ sử lý',
-        2 => 'Đang sử lý',
+        1 => 'Chờ xử lý',
+        2 => 'Đang xử lý',
         3 => 'Hoàn thành',
         4 => 'Đã hủy'
     ];

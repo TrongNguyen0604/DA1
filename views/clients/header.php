@@ -65,6 +65,9 @@
                                     <a class="dropdown-item" href="<?= ROOT_URL ?>">Profile</a>
                                 </li>
                                 <li>
+                                    <a class="dropdown-item" href="<?= ROOT_URL . '?ctl=list-order' ?>">Lịch sử đơn hàng</a>
+                                </li>
+                                <li>
                                     <a class="dropdown-item" href="<?= ROOT_URL . '?ctl=logout' ?>">Logout</a>
                                 </li>
                             <?php else : ?>

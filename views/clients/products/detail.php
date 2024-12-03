@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="main_product_how">
+        <!-- <div class="main_product_how">
             <div class="main_product_how_title">
                 <h1>How Others Are Wearing It</h1>
                 <p>Upload your photo or mention @Nike on Instagram for a chance to be featured.</p>
@@ -122,7 +122,32 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
+        <div class="Customer_title">
+    <h1>Bình luận</h1>
+</div>
+
+<div class="comment">
+    <?php foreach($comments as $comment): ?>
+        <p>
+            <b><?= $comment['fullname'] ?></b> 
+            <span class="comment-date"><?= date('d-m-Y H:i:s', strtotime($comment['created_at'])) ?></span><br>
+            <?= $comment['content'] ?>
+        </p>
+    <?php endforeach ?>
+</div>
+
+<?php if(isset($_SESSION['user'])): ?>
+    <form class="comment-form" action="" method="post">
+        <textarea name="content" rows="3" placeholder="Viết bình luận của bạn..." required></textarea>
+        <br>
+        <button type="submit">Gửi</button>
+    </form>
+<?php else: ?>
+    <div class="comment-login-message">
+        <b>Bạn cần <a href="<?= ROOT_URL . '?ctl=login' ?>">đăng nhập</a> để bình luận</b>
+    </div>
+<?php endif ?>
 
     </main>
 

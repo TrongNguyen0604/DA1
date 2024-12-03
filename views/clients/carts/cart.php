@@ -96,7 +96,7 @@
             <div class="main_pay_button">
                 <button><a style="text-decoration:none;color:white" href="<?= ROOT_URL ?>">Tiếp tục mua hàng</a></button>
                 <button type="submit">Cập nhật giỏ hàng</button>
-                <button><a href="<?= ROOT_URL . '?ctl=view-checkout' ?>">Thanh toán</a></button>
+                <button><a style="text-decoration:none;color:white" href="<?= ROOT_URL . '?ctl=view-checkout' ?>">Thanh toán</a></button>
             </div>
         </div>
     </form>

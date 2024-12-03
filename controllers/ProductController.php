@@ -23,6 +23,15 @@ class ProductController {
         $id = $_GET['id'] ; 
         // lấy chi tiets sản phẩm
         $product = (new Product)->find($id) ; 
+        //Thêm comment
+        if ($_SERVER['REQUEST_METHOD'] === "POST") {
+            $data = $_POST ; 
+            //Thêm products_id và user_id
+            $data['product_id'] = $id ; 
+            $data['user_id'] = $_SESSION['user']['id'] ; 
+            (new Comment)->create($data) ; 
+        }
+
         $title = $product['name'] ; 
         $categories = (new Category)->list() ;
 
@@ -30,10 +39,11 @@ class ProductController {
         $_SESSION['URI'] = $_SERVER['REQUEST_URI'] ; 
         // $_SESSION['totalQuantity'] = (new CartController) -> totalSumQuantity($carts);
 
-
+        //Lấy danh sách comments
+        $comments = (new Comment)->listCommentInProduct($id) ;
         return view(
             'clients.products.detail',
-            compact('product', 'categories', 'title')
+            compact('product', 'categories', 'title', 'comments')
         ) ;
     }
 }
