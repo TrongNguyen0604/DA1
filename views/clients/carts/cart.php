@@ -41,7 +41,7 @@
                         </div>
                         <h3>Tổng:<?= $cart['price'] * $cart['quantity'] ?>₫</h3>
                     </div>
-                    <a href="<?= ROOT_URL . '?ctl=delete-cart&id=' . $id?>">
+                    <a style="margin-left:140px" href="<?= ROOT_URL . '?ctl=delete-cart&id=' . $id?>">
                         <i class="fa-solid fa-xmark "></i>
                     </a>
                 </div>
@@ -57,33 +57,7 @@
 
                 </div> -->
             </div>
-            <!-- <div class="main_general">
-                <div class="main">
-                    <div class="main_img">
-                        <img src="Image/nike1.png" alt="">
-                    </div>
-                    <div class="main_information">
-                        <h2>Air Johan 1 Low</h2>
-                        <p>Varius potenti consequat a quis interdum. Vitae purus quis congue semper lacinia pharetra
-
-                            Purus aenean suspendisse suscipit. Fermentum nec tortor tempor morbi eget ut. </p>
-                        <h4>Size: One Size</h4>
-                        <div class="main_information_price">
-                            <del>3,959,000₫</del>
-                            <h4>1,959,000₫</h4>
-                        </div>
-                        <div class="main_information_button">
-                            <button class="main_information_button_side"><i class="fa-solid fa-minus"></i></button>
-                            <div class="main_information_button_1">
-                                <button class="main_information_button_center">2</button>
-                            </div>
-                            <button class="main_information_button_side"><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-xmark iconx"></i>
-                </div>
-                <div></div>
-            </div> -->
+           
 
 
 

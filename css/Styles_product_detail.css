@@ -86,8 +86,9 @@
 
 .main {
     display: flex;
-    justify-content: space-between;
-    margin-left: 100px;
+    /* justify-content: space-between; */
+    /* margin-left: 100px; */
+    margin-right:320px ;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;

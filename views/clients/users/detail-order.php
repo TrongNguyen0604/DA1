@@ -62,7 +62,7 @@
 
             <!-- Nút thao tác -->
             <div class="d-flex justify-content-between">
-                    <a href="orders.html" class="btn btn-secondary">Quay lại danh sách đơn hàng</a>
+                    <a href="<?= ROOT_URL  ?>" class="btn btn-secondary">Quay lại danh sách đơn hàng</a>
                     <?php if($order['status'] === 1) : ?>
                     <form action="" method="post">
                         <button class="btn btn-danger">Hủy đơn hàng</button>
