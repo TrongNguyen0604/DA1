@@ -10,10 +10,12 @@
     </div>
   <?php endif ?>
   <?php if($error) : ?>
-    <div class="custom-alert custom-alert-error">
-      <?= $error ?>
-    </div>
-  <?php endif ?>
+  <div class="custom-alert custom-alert-error">
+    <i class="custom-alert-icon">⚠️</i> <!-- Biểu tượng cảnh báo -->
+    <?= $error ?>
+  </div>
+<?php endif ?>
+
   <form class="custom-form" action="<?= ROOT_URL . '?ctl=login' ?>" method="POST">
     <div class="custom-form-group">
       <label for="loginEmail" class="custom-label">Email</label>
