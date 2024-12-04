@@ -36,19 +36,18 @@ include_once ROOT_DIR . "views/clients/header.php";
 
     </div>
 
+    </main>
+        <div class="Member_Benefits">
+            <div class="Member_Benefits_title">
+                <h2>Member_Benefits</h2>
+            </div>
+            <div class="Member_Benefits_img">
+                <img src="images/Member1.png" alt="">
+                <img src="images/Member2.png" alt="">
+                <img src="images/Member3.png" alt="">
+            </div>
+        </div>
    
 
-    <!-- Lợi ích thành viên -->
-    <div class="Member_Benefits">
-        <div class="Member_Benefits_title">
-            <h2>Member Benefits</h2>
-        </div>
-        <div class="Member_Benefits_img">
-            <img src="images/Member1.png" alt="Benefit 1">
-            <img src="images/Member2.png" alt="Benefit 2">
-            <img src="images/Member3.png" alt="Benefit 3">
-        </div>
-    </div> 
-</main>
 
 <?php include_once ROOT_DIR . "views/clients/footer.php"; ?>

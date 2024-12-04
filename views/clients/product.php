@@ -33,28 +33,21 @@
                 <?php foreach ($list_products as $pro) : ?>
                     <div class="product">
                     <a style="text-decoration: none; color: inherit; display: block;" href="<?= ROOT_URL . '?ctl=detail&id=' . $pro['id'] ?>">
-
                         <div class="product_img">
                             <img src="images/<?= $pro['image'] ?>" alt="Product Image" class="product-img">
                         </div>
                         <div class="product_Content">
-
                             <div class="name">
                                 <h5 class="product-name"><?= $pro['name'] ?></h5>
                             </div>
-
                             <p>Số lượng còn: <?= $pro['quantity'] ?></p>
                             <!-- <h6>size: 37 | color: White</h6> -->
-
                             <div class="price">
                             <span class="product-price"><?= number_format($pro['price']) ?>₫</span>
                             </div>
-
                         </div>
                         </a>  
-
-                    </div>
-                    
+                    </div>                   
                 <?php endforeach ?>
         </div>
     
