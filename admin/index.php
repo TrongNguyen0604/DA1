@@ -21,7 +21,7 @@ require_once __DIR__ . "/../controllers/OrderController.php";
 $ctl = $_GET['ctl'] ?? "";
     
 match ($ctl) {
-    "" => view("admin.dashboard"),
+    "" => (new DashboardController)->index(),
     // Sản phẩm
     "listsp" => (new AdminProductController)->index(),
     'addsp' => (new AdminProductController)->create(),

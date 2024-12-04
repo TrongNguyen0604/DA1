@@ -2,6 +2,13 @@
 //Controller điều khiền sản phẩm
 class AdminProductController
 {
+    public function __construct()
+    {
+        if ( !isset($_SESSION['user'])|| $_SESSION['user']['role'] != 'admin'){
+            return header("location: " . ROOT_URL);
+        }
+
+    }
     //hiển thị danh sách sản phẩm
     public function index()
     {
