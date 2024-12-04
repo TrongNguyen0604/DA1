@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/Styles.css">
 </head>
 <body>
-<div class="Classics_Spotlight">
+        <!-- <div class="Classics_Spotlight">
             <div class="Classics_Spotlight_ban">
                 <img src="images/Spotlight1.png" alt="Your images">
                 <div class="text-overlay">AIR PORCE</div>
@@ -32,7 +32,7 @@
 
 
 
-        </div>
+        </div> -->
         <div class="Don_Miss">
             <div class="Don_Miss_title">
                 <h2>Don't Miss</h2>

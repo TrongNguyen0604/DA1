@@ -28,27 +28,36 @@
         <div class="Main_title">
             <h2>See What's New</h2>
         </div>
-        <div class="See_product">
-            <?php foreach ($list_products as $pro) : ?>         
-                <div class="product">
-                <a style="text-decoration: none; color: inherit; display: block;" href="<?= ROOT_URL . '?ctl=detail&id=' . $pro['id'] ?>">
-                    <div class="product_img">
-                        <img src="images/<?= $pro['image'] ?>" alt="Product Image" class="product-img">
-                    </div>
-                    <div class="product_Content">
-                        <div class="name">
-                            <h5 class="product-name"><?= $pro['name'] ?></h5>
+        
+        <div class="List_products">
+                <?php foreach ($list_products as $pro) : ?>
+                    <div class="product">
+                    <a style="text-decoration: none; color: inherit; display: block;" href="<?= ROOT_URL . '?ctl=detail&id=' . $pro['id'] ?>">
+
+                        <div class="product_img">
+                            <img src="images/<?= $pro['image'] ?>" alt="Product Image" class="product-img">
                         </div>
-                        <p>Số lượng còn: <?= $pro['quantity'] ?></p>
-                        <div class="price">
+                        <div class="product_Content">
+
+                            <div class="name">
+                                <h5 class="product-name"><?= $pro['name'] ?></h5>
+                            </div>
+
+                            <p>Số lượng còn: <?= $pro['quantity'] ?></p>
+                            <!-- <h6>size: 37 | color: White</h6> -->
+
+                            <div class="price">
                             <span class="product-price"><?= number_format($pro['price']) ?>₫</span>
+                            </div>
+
                         </div>
+                        </a>  
+
                     </div>
-                </a>    
-                </div>
-                
-            <?php endforeach ?>
-        </div>
+                    
+                <?php endforeach ?>
+            </div>
+    
 
         
     </div>

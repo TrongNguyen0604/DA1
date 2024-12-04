@@ -53,6 +53,23 @@
                         </ul>
                     </li>
                     <li style="margin: 10px;"><a href="">Kids</a></li>
+                    <li style="margin: 10px;"><a href="">Blog</a></li>
+                    <li style="margin: 10px;"><a href="">About</a></li>
+                  
+
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+            <div class="Head1_Icon">
+                <div class="Head1_Search">
+                    <input type="search" class="form-control me-2" placeholder="Search" 
+                    aria-label="Search" id="keyword">
+                </div>
+                <button class="btn btn-outline-succcess" type= "button" id="btnSearch">
+                    <i class="fa-solid fa-search"  id="btnSearch"></i> 
+                </button>
+            </form>
+            <div class="Head1_user">
                     <li>
                         <a class="nav-link dropdown-toggle" href="<?= ROOT_URL ?>" role="button" data-bs-togger="dropdown"
                             aria-expanded="false">
@@ -80,19 +97,7 @@
                             <?php endif ?>
                         </ul>
                     </li>
-
-                </ul>
             </div>
-            <form class="d-flex" role="search">
-            <div class="Head1_Icon">
-                <div class="Head1_Search">
-                    <input type="search" class="form-control me-2" placeholder="Search" 
-                    aria-label="Search" id="keyword">
-                </div>
-                <button class="btn btn-outline-succcess" type= "button" id="btnSearch">
-                    <i class="fa-solid fa-search"  id="btnSearch"></i> 
-                </button>
-            </form>
                 <!-- icon giỏ hàng  -->
                 <a href="<?= ROOT_URL . '?ctl=view-cart' ?>">
                     <i class="fa-solid fa-cart-shopping">(<?= $_SESSION['totalQuantity'] ?? '0' ?>)</i>
@@ -101,28 +106,61 @@
             
         </div>
 
-        <!-- end menu -->
-        <div class="Head2">
-            <div class="SlideShow">
-                <p>Move, Shop, Customise & Celebrate With Us No matter what you feel
-                    <br> like doing today, It’s better as a
-                    Member. Join Us
+       
+        <div class="head2">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <p>Move, Shop, Customise & Celebrate With Us. No matter what you feel<br>
+                        like doing today, it’s better as a Member. Join Us.
+                    </p>
+                </div>
+                <div class="slide fade">
+                    <p>Enjoy Exclusive Offers, Early Access, and Rewards Be a part of .<br>
+                        Something bigger. Join Us Today.
+                    </p>
+                </div>
+                <div class="slide fade">
+                    <p>Be a part of something bigger. Join Us Today.<br> 
+                    Early Access             
+                    </p>
+                </div>
+                <!-- Bạn có thể thêm slide mới ở đây -->
             </div>
-            <!-- <div class="Join">
-                <a href="">Join Us</a>
-            </div> -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
+
+        
+
+    <script>
+            let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 1500); // Thời gian chuyển slide (3000ms = 3 giây)
+        }
+
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+
+    </script>
     </nav>
-    <!-- <header>
-        <div class="header_banner">
-            <img src="images/banner.png" alt="">
-        </div>
-        <div class="header_title">
-            <p>Nike Running</p>
-            <h1>WINNING ISN’T COMFORTABLE</h1>
-            <p>Tincidunt at mi sit risus fermentum risus ac neT est feugiat congue </p>
-        </div>
-        <div class="header_button">
-            <button>Shop Running</button>
-        </div>
-    </header> -->

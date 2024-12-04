@@ -1,14 +1,14 @@
 .main_product {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 50px;
 
 }
 
 .main_product_Air img {
-    width: 540px;
-    height: 718px;
-    margin-right: 40px;
+    width: 100%;
+    height: 700px;
+    
 }
 
 .main_product_small {
@@ -156,7 +156,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 20px 20px;
     border-bottom: 2px solid #ddd;
     margin-top: 10px;
 }
@@ -169,7 +169,7 @@
 
 /* Styling container của phần bình luận */
 .comment {
-    margin-left: 100px;
+    margin-top: 10px;
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 8px;
@@ -181,11 +181,13 @@
     margin-bottom: 15px;
     line-height: 1.6;
     color: #555;
+    margin-top: 10px;
 }
 
 .comment b {
     color: #000;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 .comment .comment-date {
@@ -195,7 +197,7 @@
 
 /* Form bình luận */
 .comment-form {
-    margin: 20px 100px;
+    margin: 20px 0px;
     padding: 15px;
     border-radius: 8px;
     background-color: #fff;
@@ -233,10 +235,12 @@
     font-size: 16px;
     color: #555;
 }
+
 .comment-login-message a {
     color: #007bff;
     text-decoration: none;
 }
+
 .comment-login-message a:hover {
     text-decoration: underline;
 }
@@ -249,7 +253,7 @@
     background-color: white;
     padding: 20px;
     margin: 20px auto;
-    margin-left: 100px;
+   
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -283,7 +287,7 @@
     border: 2px solid #000000;
     border-radius: 5px;
     transition: 0.3s;
-    margin-right: 100px;
+  
 }
 
 .Customer_feedback_link ul li a:hover {
@@ -304,8 +308,8 @@
 }
 
 .Customer_feedback_content2_img img {
-    width: 134px;
-    height: 134px;
+    width: 80%;
+    height: auto;
     margin-top: 10px;
 }
 
@@ -315,7 +319,7 @@
 }
 
 .Customer_feedback_content2_information_p {
-    margin-top: 50px;
+    margin-top: 20px;
     color: rgb(158, 158, 158);
 }
 
@@ -375,5 +379,5 @@
     margin-left: 100px;
     margin-right: 100px;
 
-   
+
 }

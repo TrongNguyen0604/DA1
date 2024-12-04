@@ -39,6 +39,7 @@ nav {
 
 .Head1_Menu {
     margin-left: 120px;
+
 }
 
 /* Định dạng thanh menu */
@@ -48,6 +49,9 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+  
+
+
 }
 
 .Head1_Menu ul li a {
@@ -55,6 +59,7 @@ nav {
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
+    
 }
 
 .Head1_Menu ul li a:hover {
@@ -102,26 +107,67 @@ nav {
     align-items: center;
     padding: 5px 50px;
 }
-
-.Head2 {
-    background-color: rgba(235, 235, 235, 1);
-    height: 100px;
-    padding-top: 10px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.SlideShow p {
+.head2 {
+    text-align: center;
+    background-color: #f5f5f5;
+    
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+   padding-top: 15px;
+    background-color: #f5f5f5;
+
+}
+
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dots {
     text-align: center;
     margin-top: 10px;
 }
 
-.Join {
-    text-align: center;
-    margin-top: 10px;
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
 }
 
-.Join a {
-    color: black;
+.dot:hover,
+.active {
+    background-color: #717171;
 }
+
+
+
+
 
 /* ---------------END NAV------------ */
 
@@ -202,7 +248,7 @@ nav {
 .Featured {
     margin-top: 50px;
 }
-
+/* 
 .See_What_New {
     margin-top: 50px;
 }
@@ -243,6 +289,87 @@ main {
 
 .price {
     margin-top: 25px;
+} */
+ .price{
+    color: black;
+ }
+.See_What_New {
+    margin-top: 50px;
+}
+
+main {
+    max-width: 1300px;
+    margin: 10px auto;
+}
+
+.List_products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    /* justify-content: space-around; */
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+
+    width: 100%;
+    /* max-width: 450px; */
+    max-width: 500px;
+    text-align: center;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product_img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_Content p{
+    margin-top: 10px;
+}
+.product_Content h6{
+    margin-top: 10px;
+}
+
+
+.name h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.name p {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.price .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    display: inline-block;
+    /* margin-top: 10px; */
 }
 
 
@@ -303,13 +430,14 @@ main {
 }
 
 .Don_Miss_title h2 {
-    margin-left: 102px;
+    margin-left: 180px;
 
 }
 
 .Don_Miss_title p {
     text-align: center;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .Don_Miss_title h1 {
@@ -356,7 +484,7 @@ main {
 }
 
 .Shop_By_Sport_title {
-    margin-left: 102px;
+    margin-left: 180px;
 
 }
 
@@ -367,9 +495,8 @@ main {
 
 .Shop_By_Sport_img img {
     max-width: 100%;
-    width: 420px;
-    height: 280px;
-    padding-left: 35px;
+  padding: 10px;
+  
 
 }
 
@@ -379,7 +506,7 @@ main {
 }
 
 .Member_Benefits_title {
-    margin-left: 102px;
+    margin-left: 180px;
 
 }
 
@@ -390,10 +517,7 @@ main {
 
 .Member_Benefits_img img {
     max-width: 100%;
-    width: 420px;
-    height: 550px;
-    padding-left: 35px;
-
+   padding: 10px;
 }
 
 .footer_suport {
@@ -411,7 +535,7 @@ main {
 
 .footer_title h4 {
     font-size: 20px;
-
+margin-top: 15px;
 }
 
 .footer_content p {
@@ -825,3 +949,77 @@ main {
     animation: fadeOut 0.5s ease-in-out 3s forwards;
   }
   
+  /* _--------------------------------- */
+  /* Kiểu dáng chung cho container bên ngoài */
+.Head1_user {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+/* Kiểu dáng cho danh sách */
+.Head1_user li {
+    list-style-type: none;
+}
+
+/* Kiểu dáng cho link chính */
+.Head1_user .nav-link {
+    color: #efeded;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* .Head1_user .nav-link:hover {
+    background-color: #060606;
+    color: #007bff;
+} */
+
+/* Biểu tượng người dùng */
+.Head1_user .nav-link i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Dropdown menu */
+.Head1_user .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+    padding: 10px 0;
+}
+
+.Head1_user:hover .dropdown-menu {
+    display: block;
+}
+
+/* Item trong dropdown */
+.Head1_user .dropdown-item {
+    color: #fffefe;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.Head1_user .dropdown-item:hover {
+    background-color: #646464;
+    color: #ffffff;
+}
+/* -------------------------------- */
+
+.main_product{
+   margin: 100px;
+}

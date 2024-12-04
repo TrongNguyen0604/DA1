@@ -3,22 +3,15 @@
 <main>
     <form action="<?= ROOT_URL . '?ctl=update-cart'?>" method="POST">
         <div class="main_all">
-
-            <div class="Main_title">
-                <p>Jordan / Shose / Jorhan 1</p>
+            <div class="Main_title">       
                 <div class="Main_title_1">
-
                     <div class="Main_title_1_h2">
                         <h2>Nike Air Force 1 ‘07</h2>
                     </div>
-
-                    <div class="Main_title_1_p">
-                        <p>Show Filters | Sort By <i class="fa-solid fa-angle-down"></i></p>
-
-                    </div>
-
                 </div>
             </div>
+            
+            <div class="all">
             <div class="main_general">
                 <?php foreach($carts as $id => $cart) : ?>
                 <div class="main">
@@ -31,7 +24,6 @@
                         <p></p>
                         <h4>Size: One Size</h4>
                         <div class="main_information_price">
-                            <!-- <del>3,959,000₫</del> -->
                             <h4><?= $cart['price'] ?>₫</h4>
                         </div>
                         <div class="main_information_button">
@@ -46,7 +38,8 @@
                     </a>
                 </div>
                 <?php endforeach ?>
-                <!-- <div class="main_vocher">
+                </div>
+                <div class="main_vocher">
                     <h2>Apply Vocher</h2>
                     <input type="text" placeholder="Nhập mã giảm giá">
                     <h4>Phiếu giảm giá của Shop</h4>
@@ -54,13 +47,11 @@
                     </p>
                     <p>Giảm 25% tổng đơn hàng nếu mua 5 đơn trở lên <input type="radio" name="discount" id="discount25">
                     </p>
+                </div>
+                </div>
 
-                </div> -->
-            </div>
            
-
-
-
+           
         </div>
         <div class="main_pay">
             <div class="main_pay_total_price">

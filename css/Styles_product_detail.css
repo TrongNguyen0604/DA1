@@ -84,11 +84,21 @@
     color: rgb(214, 214, 214);
 }
 
+/* --------------------------------------------- */
+.all{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.main_general {
+    /* display: grid;
+    grid-template-columns: 3fr 2fr; */
+}
+
 .main {
     display: flex;
     /* justify-content: space-between; */
     /* margin-left: 100px; */
-    margin-right:320px ;
+    margin-right:20px ;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -98,10 +108,6 @@
     border-radius: 5px;
 }
 
-.main_general {
-    /* display: grid; */
-    grid-template-columns: 3fr 2fr;
-}
 
 .main_img img {
     width: 230px;
@@ -111,7 +117,7 @@
 .main_information {
     margin-left: 40px;
     margin-top: 0;
-    width: 530px;
+    width: 430px;
 }
 
 .main_information h2 {
@@ -193,7 +199,8 @@
 }
 
 .main_vocher {
-    width: 400px;
+    width: 100%;
+    height: 250px;
     /* Chiều rộng của khung */
     margin: 20px auto;
     /* Căn giữa và cách phía trên */
@@ -253,17 +260,10 @@
     font-size: 14px;
 }
 
-.main_vocher input[type="radio"] {
-    margin-right: 10px;
-    /* Khoảng cách sau radio */
-    cursor: pointer;
-    /* Con trỏ thay đổi khi hover */
-}
 
-.main_vocher p input {
-    margin-left: 70px;
-    cursor: pointer;
-}
+
+
+
 
 /* -----------------BUTTON_PAY----------------------------- */
 .main_pay {
