@@ -40,7 +40,7 @@ class ProductController {
         // $_SESSION['totalQuantity'] = (new CartController) -> totalSumQuantity($carts);
 
         //Lấy danh sách comments
-        $comments = (new Comment)->listCommentInProduct($id) ;
+        $comments = (new Comment)->listCommentInProductClient($id) ;
         return view(
             'clients.products.detail',
             compact('product', 'categories', 'title', 'comments')
