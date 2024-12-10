@@ -30,7 +30,7 @@ include_once ROOT_DIR . "views/clients/header.php";
                     </div>
                 <?php endforeach; ?>
                 <?php else : ?>
-                <div>Danh muc <strong> <?= $keyword ?></strong> khong co sản phẩm</div>
+                <div>Danh mục <strong> <?= $keyword ?></strong> không có sản phẩm</div>
                 <?php endif ?>
             </div>
 

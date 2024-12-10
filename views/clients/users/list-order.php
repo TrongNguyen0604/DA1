@@ -32,7 +32,6 @@
             <a href="<?= ROOT_URL . '?ctl=order-detail-user&id=' . $order['id'] ?>" class="btn btn-primary">
               Chi tiết
             </a>
-            Hủy
           </td>
         </tr>
       <?php endforeach ?>
